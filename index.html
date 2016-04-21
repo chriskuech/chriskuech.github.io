@@ -10,7 +10,8 @@
     <![endif]-->
     <style>
       html, body {margin: 0; padding: 0; width: 100%; height: 100%;}
-      #logo {width: 100%; height: 100%; overflow: hidden; position: absolute; z-index: -1;}
+      #wrapper {width: 100%; height: 100%; position: absolute; overflow: hidden;}
+      #logo {position: absolute; z-index: -1;}
       #logo * {float: left; margin: 0 20px 20px 0;}
       #red    {background: #f65314;}
       #green  {background: #7cbb00;}
@@ -25,20 +26,23 @@
     </style>
   </head>
   <body>
-    
-    <div id="logo">
-      <div id="red"></div>
-      <div id="green"></div>
-      <div id="blue"></div>
-      <div id="yellow"></div>
+    <div id="wrapper">
+        
+      <div id="logo">
+        <div id="red"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="yellow"></div>
+      </div>
+      
+      <header>
+        <h1>Chris Kuech</h1>
+        <h2>Site Reliability Engineering</h2>
+        <h3>Microsoft.com BI Applications</h3>
+        <h4>Seattle, WA | <a id="email"></a></h4>
+      </header>
+      
     </div>
-    
-    <header>
-      <h1>Chris Kuech</h1>
-      <h2>Site Reliability Engineering</h2>
-      <h3>Microsoft.com BI Applications</h3>
-      <h4>Seattle, WA | <a id="email"></a></h4>
-    </header>
     
     <script>
       // avoid scrapers

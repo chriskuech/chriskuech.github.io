@@ -12,6 +12,6 @@ This is a repo for deploying Web Sites.  It’s easy to find free/cheap HTML tem
 1. Modify `package.json` as necessary.  Set the correct paths to your `.scss` file or remove the CSS build entirely.
 1. Copy in the content of your template's `index.html` to `src/index.template.html`.
 1. Add this HTML snippet into the end of your `body` element to enable live page reloading.
-1. Run the development server with live building and live reloading using `yarn start`.
+1. Run the development server with live building and live reloading using `yarn watch`.
 1. Simplify `src/index.template.html` into a [mustache.js](https://mustache.github.io/) template, moving values to `src/config.json`.
 1. Deploy the website with `yarn deploy`.

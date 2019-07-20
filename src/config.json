@@ -1,3 +1,52 @@
 {
-  "title": "Buenos Dias"
+  "common": {
+    "email": "cjkuech@gmail.com",
+    "linkedIn": "https://www.linkedin.com/in/chriskuech/",
+    "twitter": "https://twitter.com/cjkuech"
+  },
+  "hero": {
+    "title": "",
+    "body": "",
+    "callToAction": "Learn More"
+  },
+  "aboutMe": {
+    "title": "Automator of Things",
+    "body": "I am an Automator of Things.  I can automate business processes",
+    "callToAction": "",
+    "callToActionHref": ""
+  },
+  "blog": {
+    "posts": [
+      {
+        "title": "Declarative DevOps Microframeworks",
+        "name": "Chris Kuech",
+        "date": "Jun 16, 2019",
+        "category": "DevOps",
+        "categoryHref": "",
+        "description": "Declarative DevOps Microframeworks is the most robust, portable, and scalable pattern for managing your DevOps systems with less code. This series will help you understand the concepts behind Declarative DevOps Microframeworks, then walk you through implementing some common use cases in the most DevOps-friendly language: PowerShell.",
+        "href": "https://medium.com/@cjkuech/declarative-devops-microframeworks-9908c8d05332?source=friends_link&sk=4e361c6020912fb160e626994a6e5184",
+        "imgSrc": "https://miro.medium.com/max/700/1*zNBy1zL3OXhmGcWm1Q2jMw.png"
+      },
+      {
+        "title": "",
+        "name": "Chris Kuech",
+        "date": "",
+        "category": "",
+        "categoryHref": "",
+        "description": "",
+        "href": "",
+        "imgSrc": ""
+      },
+      {
+        "title": "Functional Programming in PowerShell",
+        "name": "Chris Kuech",
+        "date": "Jun 6, 2019",
+        "category": "Advanced PowerShell",
+        "categoryHref": "",
+        "description": "Classes are associated with Object-Oriented Programming and rarely associated with Functional Programming. This guide shows you how to leverage PowerShell classes while keeping your code functional.",
+        "href": "",
+        "imgSrc": ""
+      }
+    ]
+  }
 }

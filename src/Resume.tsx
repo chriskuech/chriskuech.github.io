@@ -1,13 +1,14 @@
 import pic from "./assets/me.jpg";
 
 export const Resume = () => (
-  <div>
+  <div style={{ maxWidth: "70%" }}>
     <img
       src={pic}
       style={{
         borderTopLeftRadius: "50%",
         borderTopRightRadius: "50%",
         width: "500px",
+        maxWidth: "calc(100% - 20px)",
         border: "10px solid white",
         margin: 0,
         display: "block",
@@ -22,7 +23,6 @@ export const Resume = () => (
         fontFamily: "Futura, sans-serif",
         color: "rgb(147, 177, 101)",
         background: "rgb(3 31 13)",
-        //   color: "#71eeb8",
       }}
     >
       Buenos Dias!

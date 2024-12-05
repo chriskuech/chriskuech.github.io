@@ -24,10 +24,12 @@ jobs:
 
       - name: Push to release branch
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          find . -not -path "./dist*" -not -name ".git" -not -name ".github" -not -name "." -exec rm -rf {} +
+          find . -maxdepth 1 -not -path "./dist*" -not -name ".git" -not -name ".github" -not -name "." -exec rm -rf {} +
           mv dist/* .
           rmdir dist
+
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
           git commit -m "Build and release"
-          git push origin HEAD:release
+          git push origin HEAD:dist

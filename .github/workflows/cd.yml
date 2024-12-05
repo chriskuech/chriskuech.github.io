@@ -31,5 +31,5 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git commit -m "Build and release"
+          git commit -am "Build and release"
           git push origin HEAD:dist

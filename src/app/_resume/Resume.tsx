@@ -33,7 +33,7 @@ export const Resume = () => (
             target="_blank"
           >
             <AiOutlineMail />
-            <div>chris@kuech.dev</div>
+            <span>chris@kuech.dev</span>
           </a>
           <a
             aria-label="Calendar"
@@ -42,7 +42,7 @@ export const Resume = () => (
             target="_blank"
           >
             <AiOutlineCalendar />
-            <div>Meet</div>
+            <span>Meet</span>
           </a>
           <a
             aria-label="Resume"
@@ -51,11 +51,11 @@ export const Resume = () => (
             target="_blank"
           >
             <AiOutlineFileWord />
-            <div>Resume</div>
+            <span>Resume</span>
           </a>
           <a aria-label="Location" title="Location">
             <AiOutlineEnvironment />
-            <div>Seattle, WA</div>
+            <span>Seattle, WA</span>
           </a>
         </div>
         <div className="nav-links">
@@ -66,7 +66,7 @@ export const Resume = () => (
             target="_blank"
           >
             <AiOutlineLinkedin />
-            <div>LinkedIn</div>
+            <span>LinkedIn</span>
           </a>
           <a
             aria-label="GitHub"
@@ -74,7 +74,7 @@ export const Resume = () => (
             href="https://github.com/chriskuech"
           >
             <AiOutlineGithub />
-            <div>GitHub</div>
+            <span>GitHub</span>
           </a>
           <a
             aria-label="Stack Overflow"
@@ -82,7 +82,7 @@ export const Resume = () => (
             href="https://stackoverflow.com/users/1470887/twinlakes"
           >
             <LiaStackOverflow />
-            <div>Stack Overflow</div>
+            <span>Stack Overflow</span>
           </a>
         </div>
       </div>

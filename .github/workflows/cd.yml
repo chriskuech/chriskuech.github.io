@@ -22,17 +22,26 @@ jobs:
       - name: Build the project
         run: npm run build
 
-      - name: Push to release branch
-        run: |
-          DIST_DIR=out
-          
-          find . -maxdepth 1 -not -path "./$DIST_DIR*" -not -name ".git" -not -name ".github" -not -name "." -exec rm -rf {} +
-          rsync -a $DIST_DIR/ .
-          rm -r $DIST_DIR
+      # - name: Push to release branch
+      #   run: |
+      #     DIST_DIR=out
 
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+      #     find . -maxdepth 1 -not -path "./$DIST_DIR*" -not -name ".git" -not -name ".github" -not -name "." -exec rm -rf {} +
+      #     rsync -a $DIST_DIR/ .
+      #     rm -r $DIST_DIR
 
-          git add -A
-          git commit -am "Build and release"
-          git push origin HEAD:dist --force
+      #     git config --global user.name "github-actions[bot]"
+      #     git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      #     git add -A
+      #     git commit -am "Build and release"
+      #     git push origin HEAD:dist --force
+
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: out/
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

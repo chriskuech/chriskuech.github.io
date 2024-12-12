@@ -1,0 +1,296 @@
+:root {
+  --accent: rgba(223 231 134 / 1);
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 0.5em;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  --height: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    height: var(--height);
+    width: auto;
+  }
+
+  h1 {
+    --spacing: 0.3em;
+    font-size: var(--height);
+    border-right: 1px solid white;
+    padding-right: var(--spacing);
+    margin-right: var(--spacing);
+    &:hover {
+      text-decoration: underline;
+      text-decoration-thickness: from-font;
+      text-underline-offset: 0.1em;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      gap: 0 0.8em;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+
+      & > * {
+        display: flex;
+        flex-direction: row;
+        gap: 0.2em;
+        align-items: center;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      font-style: normal;
+      color: white;
+    }
+
+    a[href]:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+  }
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 1rem;
+  position: relative;
+
+  .label {
+    font-size: 1rem;
+    font-weight: 300;
+    opacity: 0.7;
+    position: absolute;
+    top: 0.7em;
+    left: 0.7em;
+    opacity: 0.25;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin: 0.7em 0;
+  }
+
+  &.intro {
+    font-size: 1.7rem;
+    & p {
+      margin: 0;
+    }
+  }
+
+  .experience-list {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+
+    & > div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.3rem;
+      gap: 0.5rem;
+
+      & > div:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+        gap: 0.2rem;
+
+        & > strong {
+          font-weight: 300;
+          font-size: 4rem;
+          line-height: 1em;
+        }
+
+        & > sub {
+          font-size: 0.8rem;
+          opacity: 0.5;
+          bottom: 1em;
+          margin-left: -0.2rem;
+        }
+      }
+
+      & > div:last-child {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  ul {
+    list-style-type: square;
+    list-style-position: outside;
+
+    li {
+      line-height: 1em;
+      margin-bottom: 0.7em;
+      margin-left: 1.7rem;
+
+      &&::marker {
+        color: rgb(111 0 255 / 0.3);
+      }
+
+      div {
+        font-size: 0.7em;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+header,
+section {
+  padding: 1.7rem;
+  background-color: rgba(0 0 0 0.3);
+  backdrop-filter: blur(1rem);
+  border-radius: 0.7rem;
+}
+
+figure {
+  margin: 1.7rem;
+
+  img {
+    display: block;
+  }
+
+  figcaption {
+    font-size: 0.7rem;
+    line-height: 1em;
+    opacity: 0.7;
+    margin-top: 0.1rem;
+    text-align: right;
+
+    a {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+
+      &:hover {
+        text-decoration-style: solid;
+      }
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 0.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.card-group {
+  --spacing: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing);
+
+  .card {
+    --card-color: white;
+    border: 1px solid var(--card-color);
+    flex: 1;
+  }
+
+  .card-title {
+    --spacing: 0.3rem;
+    background-color: var(--card-color);
+    color: black;
+    padding: var(--spacing) var(--spacing);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing);
+    text-transform: uppercase;
+  }
+
+  .card-title svg {
+    font-size: 1.5rem;
+  }
+
+  .card-list {
+    margin: 0;
+    padding: 1rem;
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+.button,
+button {
+  --accent: rgba(223 231 134 / 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--accent);
+    color: black;
+  }
+}
+
+mark {
+  background-color: var(--accent);
+  padding-inline: 0.2rem;
+}
+
+a[href] {
+  cursor: pointer;
+}

@@ -52,21 +52,17 @@ header {
     }
 
     .nav-links {
-      display: flex;
+      display: flex !important;
       flex-direction: row;
       gap: 0 0.8em;
       flex-wrap: wrap;
       font-size: 0.8rem;
 
-      & > * {
-        display: flex;
+      a {
+        display: flex !important;
         flex-direction: row;
         gap: 0.2em;
         align-items: center;
-      }
-
-      svg {
-        display: inline-block;
       }
     }
 

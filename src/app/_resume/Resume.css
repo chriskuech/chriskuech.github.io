@@ -64,6 +64,10 @@ header {
         gap: 0.2em;
         align-items: center;
       }
+
+      svg {
+        display: inline-block;
+      }
     }
 
     a {

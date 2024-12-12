@@ -13,6 +13,10 @@ jobs:
       pages: write
       contents: write
 
+    environment:
+      name: github-pages
+      url: https://chriskuech.com
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2

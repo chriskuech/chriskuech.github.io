@@ -136,11 +136,17 @@ export const Resume = () => (
         </li>
         <li>
           Complex problems
-          <div>simulations, AI, system design, broad scope</div>
+          <div>
+            simulations, <mark>business process automation</mark>, AI, system{" "}
+            design, broad scope
+          </div>
         </li>
         <li>
           High-stakes problems
-          <div>high-scale, high-compliance systems, early-stage startups</div>
+          <div>
+            early-stage startups, high-scale, <mark>high-compliance</mark>{" "}
+            systems
+          </div>
         </li>
         <li>
           Rapid app development

@@ -68,10 +68,6 @@ header {
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 1rem;
   position: relative;
   padding: 1.7rem;
   border-radius: 0.7rem;
@@ -91,17 +87,6 @@ section {
     text-transform: uppercase;
     font-stretch: ultra-expanded;
     letter-spacing: 0.1em;
-  }
-
-  p {
-    margin: 0.7em 0;
-  }
-
-  &.intro {
-    font-size: 1.7rem;
-    & p {
-      margin: 0;
-    }
   }
 
   .experience-list {

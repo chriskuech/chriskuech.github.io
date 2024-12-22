@@ -113,7 +113,7 @@ export const Resume = () => (
             </a>
           </figcaption>
         </figure>
-        <section className="intro black-glass">
+        <section className="black-glass text-3xl *:mb-4">
           <p>
             Chris is a Software Engineering Leader with a passion for shipping
             features and solving interesting problems.

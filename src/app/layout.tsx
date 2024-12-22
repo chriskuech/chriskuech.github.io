@@ -1,9 +1,9 @@
 import "server-only";
-import Footer from "@/app/_components/footer";
-import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./globals.css";
 
@@ -60,6 +60,7 @@ export default function RootLayout({
       <body className={cn(inter.className, "dark:text-white")}>
         <div className="min-h-screen">{children}</div>
       </body>
+      <GoogleAnalytics gaId="G-F60PHPBVGH" />
     </html>
   );
 }

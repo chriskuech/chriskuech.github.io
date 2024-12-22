@@ -20,7 +20,7 @@ import "./Resume.css";
 export const Resume = () => (
   <div className="flex flex-col gap-8">
     <div className="black-glass">
-      <div className="container mx-auto px-8 py-12">
+      <div className="container mx-auto px-12 py-12">
         <header className="flex flex-row justify-between items-center">
           <a href="/">
             <h1>Chris Kuech</h1>
@@ -350,68 +350,70 @@ export const Resume = () => (
       </div>
     </div>
 
-    <footer className="bg-black py-8 flex flex-row gap-8">
-      <div className="container mx-auto text-sm px-8 opacity-70">
-        &copy; {new Date().getFullYear()} Christopher Kuech. All rights
-        reserved.
-      </div>
-      <div className="container mx-auto flex flex-row flex-wrap text-xs px-8 gap-y-1.5 justify-end opacity-70">
-        <a
-          aria-label="Email"
-          title="Email"
-          href="mailto:chris@kuech.dev"
-          target="_blank"
-        >
-          <AiOutlineMail />
-          <span>chris@kuech.dev</span>
-        </a>
-        <a
-          aria-label="Calendar"
-          title="Book a Meeting"
-          href="https://cal.com/chriskuech"
-          target="_blank"
-        >
-          <AiOutlineCalendar />
-          <span>Meet</span>
-        </a>
-        <a
-          aria-label="Resume"
-          title="Resume"
-          href="/assets/Chris.Kuech.Resume.2024.docx"
-          target="_blank"
-        >
-          <AiOutlineFileWord />
-          <span>Resume</span>
-        </a>
-        <a aria-label="Location" title="Location">
-          <AiOutlineEnvironment />
-          <span>Seattle, WA</span>
-        </a>
-        <a
-          aria-label="LinkedIn"
-          title="LinkedIn"
-          href="https://www.linkedin.com/in/chriskuech"
-          target="_blank"
-        >
-          <AiOutlineLinkedin />
-          <span>LinkedIn</span>
-        </a>
-        <a
-          aria-label="GitHub"
-          title="GitHub"
-          href="https://github.com/chriskuech"
-        >
-          <AiOutlineGithub />
-          <span>GitHub</span>
-        </a>
-        <a
-          aria-label="Stack Overflow"
-          title="Stack Overflow"
-          href="https://stackoverflow.com/users/1470887/twinlakes"
-        >
-          <LiaStackOverflow />
-          <span>Stack Overflow</span>
-        </a>
+    <footer className="bg-black text-xs">
+      <div className="container mx-auto flex flex-row justify-between items-start gap-x-8 px-12 py-8">
+        <div className="opacity-70">
+          &copy; {new Date().getFullYear()} Christopher Kuech.
+          <wbr /> All rights reserved.
+        </div>
+        <div className="flex flex-row flex-wrap gap-y-1.5 justify-end opacity-70">
+          <a
+            aria-label="Email"
+            title="Email"
+            href="mailto:chris@kuech.dev"
+            target="_blank"
+          >
+            <AiOutlineMail />
+            <span>chris@kuech.dev</span>
+          </a>
+          <a
+            aria-label="Calendar"
+            title="Book a Meeting"
+            href="https://cal.com/chriskuech"
+            target="_blank"
+          >
+            <AiOutlineCalendar />
+            <span>Meet</span>
+          </a>
+          <a
+            aria-label="Resume"
+            title="Resume"
+            href="/assets/Chris.Kuech.Resume.2024.docx"
+            target="_blank"
+          >
+            <AiOutlineFileWord />
+            <span>Resume</span>
+          </a>
+          <a aria-label="Location" title="Location">
+            <AiOutlineEnvironment />
+            <span>Seattle, WA</span>
+          </a>
+          <a
+            aria-label="LinkedIn"
+            title="LinkedIn"
+            href="https://www.linkedin.com/in/chriskuech"
+            target="_blank"
+          >
+            <AiOutlineLinkedin />
+            <span>LinkedIn</span>
+          </a>
+          <a
+            aria-label="GitHub"
+            title="GitHub"
+            href="https://github.com/chriskuech"
+          >
+            <AiOutlineGithub />
+            <span>GitHub</span>
+          </a>
+          <a
+            aria-label="Stack Overflow"
+            title="Stack Overflow"
+            href="https://stackoverflow.com/users/1470887/twinlakes"
+          >
+            <LiaStackOverflow />
+            <span>Stack Overflow</span>
+          </a>
+        </div>
       </div>
     </footer>
   </div>

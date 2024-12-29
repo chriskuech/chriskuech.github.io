@@ -139,7 +139,7 @@ section {
       font-weight: 300;
 
       &&::marker {
-        color: rgb(111 0 255 / 0.3);
+        color: rgba(111, 0, 255, 0.885);
       }
 
       div {
@@ -229,7 +229,16 @@ h4 {
     padding: 1rem;
 
     li {
-      margin-bottom: 0.5rem;
+      strong {
+        display: block;
+        font-size: 1.3em;
+        margin-bottom: 0.3em;
+        color: white;
+      }
+
+      line-height: 1.3em;
+      margin-bottom: 0.7rem;
+      color: rgba(255 255 255 / 0.7);
     }
   }
 }

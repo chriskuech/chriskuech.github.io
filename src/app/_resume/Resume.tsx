@@ -4,16 +4,13 @@ import {
   AiOutlineDownload,
   AiOutlineEnvironment,
   AiOutlineFileWord,
-  AiOutlineFire,
   AiOutlineGithub,
   AiOutlineLinkedin,
   AiOutlineMail,
-  AiOutlineProject,
   AiOutlineRight,
   AiOutlineRise,
 } from "react-icons/ai";
 import { LiaBrainSolid, LiaStackOverflow } from "react-icons/lia";
-import { RxCube } from "react-icons/rx";
 import Image from "next/image";
 import "./Resume.css";
 
@@ -127,7 +124,7 @@ export const Resume = () => (
     </div>
 
     <div className="container mx-auto px-8">
-      <div className="flex flex-col lg:flex-row gap-8">
+      <div className="flex flex-col lg:flex-row gap-8 pb-8">
         <section className="w-full lg:w-2/3 black-glass">
           <div className="label">Interests</div>
           <a
@@ -243,111 +240,110 @@ export const Resume = () => (
             </div>
           </div>
         </section>
-
-        <section style={{ display: "none" }}>
-          <div className="label">Projects</div>
-
-          <p>Chris has experience shipping the following features&mdash;</p>
-
-          <div className="card-group">
-            <div className="card">
-              <div className="card-title">
-                <AiOutlineDeploymentUnit />
-                High-Compliance Infrastructure and Architecture
-              </div>
-              <ul className="card-list">
-                <li>ITAR, CMMC, ISO-8100</li>
-                <li>Microservices Platforms</li>
-                <li>Microservice Architectures</li>
-                <li>High-Availability Systems</li>
-                <li>High-Scale Systems</li>
-                <li>Multi-Region, Multi-Domain Systems</li>
-              </ul>
-            </div>
-            <div className="card">
-              <div className="card-title">
-                <LiaBrainSolid />
-                Intelligent Agents
-              </div>
-              <ul className="card-list">
-                <li>
-                  Process inbound emails and PDFs with AI to automate data entry
-                  and drive workflows
-                </li>
-                <li>
-                  Implement Human-in-the-Loop safeguards to leverage AI without
-                  risk
-                </li>
-                <li>Send automated updates and alerts from the system</li>
-              </ul>
-            </div>
-            <div className="card">
-              <div className="card-title">
-                <AiOutlineRise />
-                Workflow Optimization
-              </div>
-              <ul className="card-list">
-                <li>Audit workflows for efficiency and optimization</li>
-                <li>
-                  Integrate with custom systems, ERPs, 3rd Party APIs, Low-Code
-                  Platforms (AirTable, Google Sheets, etc.)
-                </li>
-                <li>
-                  Embed and tie in e-commerce website purchasing directly into
-                  your workflow, supported by McMaster-Carr, Amazon, Newegg, and
-                  other major e-commerce providers
-                </li>
-                <li>
-                  Generate attractive customized emails and PDFs, including
-                </li>
-                <li>
-                  Automate Requisition, RFQ, RFP, PO, Job Traveler, Invoice,
-                  Shipping, and other processes.
-                </li>
-              </ul>
-            </div>
-            <div className="card">
-              <div className="card-title">
-                <RxCube />
-                Visualize and Analyze CAD models
-              </div>
-              <ul className="card-list">
-                <li>
-                  Extract Geometric Dimensioning and Tolerancing from PDFs
-                </li>
-                <li>
-                  Partner with Computational Geometers to integrate feature
-                  detection, manufacturability analysis, cost estimation,
-                  material stock size, part similarity search, etc.
-                </li>
-                <li>
-                  Enable visualizing STEP and other manufacturing design files
-                  as thumbnails and in an interactive viewer within existing
-                  workflows, while adhering to CMMC and other requirements.
-                </li>
-              </ul>
-            </div>
-            <div className="card">
-              <div className="card-title">
-                <AiOutlineProject />
-                Project Management
-              </div>
-              <ul className="card-list">
-                <li>Leading teams</li>
-              </ul>
-            </div>
-            <div className="card">
-              <div className="card-title">
-                <AiOutlineFire />
-                Rapid Development
-              </div>
-              <ul className="card-list">
-                <li>Leading teams</li>
-              </ul>
-            </div>
-          </div>
-        </section>
       </div>
+
+      <section className="w-full black-glass">
+        <div className="label">Past Projects</div>
+
+        <div className="card-group">
+          <div className="card">
+            <div className="card-title">
+              <AiOutlineRise />
+              Business Process Automation
+            </div>
+            <ul className="card-list">
+              <li>
+                <strong>Workflow Optimization</strong> Audit workflows for
+                efficiency, consistency, and optimization.
+              </li>
+              <li>
+                <strong>Intelligent Agents</strong> Combine email, Generative
+                AI, RAG/vector databases, and Human-in-the-Loop safeguards to
+                automate menial business tasks (data entry, document generation,
+                status updates/alerts, etc.), drive workflows, and identify
+                risks.
+              </li>
+              <li>
+                <strong>Custom Document Generation</strong> Replace rigid
+                document templates with attractive, customized, flexible emails
+                and PDFs tailored to your business and workflows.
+              </li>
+              <li>
+                <strong>Manufacturing and Supply Chain</strong> Expertise in
+                aerospace procurement and manufacturing business administration.
+                Integrate with ERPs, E-Commerce Punchout, CAD
+                visualization/analysis, and more. Automate Requisition, RFQ,
+                RFP, PO, Job Traveler, Invoice, Shipping, and other processes.
+              </li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <div className="card-title">
+              <AiOutlineDeploymentUnit />
+              Cloud Architecture
+            </div>
+            <ul className="card-list">
+              <li>
+                <strong>Compliance</strong> Design and deploy cloud
+                architectures adhering to CMMC, SOC 2, GDPR, and other
+                compliance requirements.
+              </li>
+              <li>
+                <strong>Enterprise-Scale</strong> Deploy highly available and
+                scalable services spanning across multiple regions and domains.
+              </li>
+              <li>
+                <strong>Microservices Platforms</strong> Architect and implement
+                microservices platforms to scale and empower dev teams, from
+                developer experience to infrastructure deployment.
+              </li>
+              <li>
+                <strong>Architecture</strong> Architect solutions across
+                Kubernetes, cloud-native, and web apps. Implement fault-tolerant
+                integrations with low-availability systems, scientific
+                computing, and other niche systems.
+              </li>
+            </ul>
+          </div>
+
+          <div className="card">
+            <div className="card-title">
+              <LiaBrainSolid />
+              Startup Engineering Leadership
+            </div>
+            <ul className="card-list">
+              <li>
+                <strong>Rapid Prototyping</strong> Leverage AI copilots, static
+                analysis, off-the-shelf libraries, and other tools to solve
+                business problems quickly and introduce user feedback earlier in
+                the software development lifecycle.
+              </li>
+              <li>
+                <strong>Startup Technical Strategy</strong> Define and implement
+                the technical strategy for startups, including architecture,
+                infrastructure, development experience, and feature
+                prioritization.
+              </li>
+              <li>
+                <strong>Team Leadership</strong> Lead teams of 10+ engineers,
+                including hiring, onboarding, and mentoring. Hands-on leadership
+                through code review, pair programming, and direct contribution
+                to ensure results.
+              </li>
+              <li>
+                <strong>Product Requirement Negotiation</strong> Translate
+                problems from stakeholders into deliverable solutions,
+                optimizing for cost, time, and quality.
+              </li>
+              <li>
+                <strong>Project Management</strong> Leverage agile concepts to
+                drive product development without dogmatic process overhead.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
 
     <footer className="bg-black text-xs">
